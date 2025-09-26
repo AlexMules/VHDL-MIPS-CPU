@@ -5,6 +5,10 @@ This project is a hardware implementation of a MIPS processor written in VHDL. I
 ## Instruction set
 The processor can execute three types of instructions: **`Register`**, **`Immediate`** and **`Jump`**.
 
+<div align="center">
+  <img width="700" height="361" alt="image" src="https://github.com/user-attachments/assets/ba79f700-7654-40ba-931c-53ecca839df8" />
+</div><br><br>
+
 **`Register-type`** instructions:
 * add - Addition
 * sub - Subtraction
@@ -26,4 +30,11 @@ The processor can execute three types of instructions: **`Register`**, **`Immedi
 **`Jump-type`** instructions:
 * j - Jump<br><br>
 
-# 
+The execution of an instruction consists of the following five stages:
+1. IF – Instruction Fetch
+2. ID/OF – Instruction Decode / Operand Fetch
+3. EX – Execute
+4. MEM – Memory
+5. WB – Write-Back
+
+
