@@ -81,7 +81,7 @@ Due to the new architecture, certain components of the project had to be modifie
 
 <div align="center">
     <img width="800" height="426" alt="image" src="https://github.com/user-attachments/assets/65459caa-425c-4609-be76-35b2097a2d59" />
-</div><br><br>
+</div><br>
 
 To eliminate **structural**, **data**, and **control** **hazards** in the pipelined implementation, a software-based solution was adopted: inserting **NoOp instructions** into the program. **`NoOp (No Operation)`** is a pseudo-instruction that does not affect the processor’s state elements (registers and memories), while the PC register increments normally. It is implemented using the instruction **`SLL $0, $0, 0`**. As a result, the test program was modified. The new program used for testing the pipelined architecture is located in the file **`assembly_program_pipeline.txt`**.  
 
